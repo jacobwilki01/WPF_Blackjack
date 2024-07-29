@@ -3,10 +3,12 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:WPF_Blackjack"
+        xmlns:view="clr-namespace:WPF_Blackjack.View"
+        xmlns:local="clr-namespace:WPF_Blackjack" 
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Blackjack" Height="625" Width="750">
     <Grid>
-
+        <view:CardView DataContext="{Binding TestCard}"/>
+        <!--<view:ButtonView DataContext="{Binding TestButton}"/>-->
     </Grid>
 </Window>
