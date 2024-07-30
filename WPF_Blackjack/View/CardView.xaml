@@ -7,7 +7,7 @@
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <Grid>
-        <Image Source="{Binding CardImage}" Height="110" Width="80" 
+        <Image x:Name="Card" Source="{Binding CardImage}" Height="110" Width="80" 
                RenderOptions.BitmapScalingMode="NearestNeighbor" 
                UseLayoutRounding="True"
                MouseEnter="Image_MouseEnter"

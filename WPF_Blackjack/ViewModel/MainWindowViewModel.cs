@@ -3,20 +3,28 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WPF_Blackjack.Data;
+using WPF_Blackjack.Enum;
 
 namespace WPF_Blackjack.ViewModel
 {
     public class MainWindowViewModel : BaseViewModel
     {
-        public CardViewModel TestCard { get; set; }
+        public PlayerHandViewModel testHandModel { get; } = new();
 
-        public ButtonViewModel TestButton { get; set; }
+        public RelayCommand AddCardCommand { get; }
+
+        static Random rnd = new Random();
 
         public MainWindowViewModel() 
         {
-            TestCard = new("C:\\Projects\\WPF_Blackjack\\WPF_Blackjack\\Assets\\Cards\\hearts_ace.png");
-            TestButton = new("C:\\Projects\\WPF_Blackjack\\WPF_Blackjack\\Assets\\Buttons\\button_double_enabled.png",
-                             "C:\\Projects\\WPF_Blackjack\\WPF_Blackjack\\Assets\\Buttons\\button_double_disabled.png");
+            AddCardCommand = new(addCard);
+        }
+
+        private void addCard()
+        {
+            int r = rnd.Next(CardsToModels.Map.Count);
+            testHandModel.addCard(CardsToModels.Map.Values.ToList()[r]);
         }
     }
 }

@@ -24,6 +24,10 @@ namespace WPF_Blackjack.View
         public CardView()
         {
             InitializeComponent();
+
+            // Forces the card image to the right location.
+            AdjustImage(Card, -7.5, 0);
+            AdjustImage(Card, 7.5, 0);
         }
 
         /// <summary>
@@ -47,10 +51,10 @@ namespace WPF_Blackjack.View
         /// </summary>
         /// <param name="image">The image.</param>
         /// <param name="amount">The amount to adjust it by, in pixels.</param>
-        private void AdjustImage(Image image, double amount)
+        private void AdjustImage(Image image, double amount, double time=125)
         {
             TranslateTransform transformation = new TranslateTransform();
-            DoubleAnimation verticalAnimation = new DoubleAnimation(0, amount, TimeSpan.FromMilliseconds(125));
+            DoubleAnimation verticalAnimation = new DoubleAnimation(0, amount, TimeSpan.FromMilliseconds(time));
             image.RenderTransform = transformation;
             transformation.BeginAnimation(TranslateTransform.YProperty, verticalAnimation);
         }

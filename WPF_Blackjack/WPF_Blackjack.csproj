@@ -8,4 +8,62 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <None Remove="Assets\Cards\hearts_ace.png" />
+    <None Remove="Assets\Cards\hearts_king.png" />
+    <None Remove="Assets\Cards\hearts_queen.png" />
+    <None Remove="Assets\Cards\hearts_jack.png" />
+    <None Remove="Assets\Cards\hearts_ten.png" />
+    <None Remove="Assets\Cards\hearts_nine.png" />
+    <None Remove="Assets\Cards\hearts_eight.png" />
+    <None Remove="Assets\Cards\hearts_seven.png" />
+    <None Remove="Assets\Cards\hearts_six.png" />
+    <None Remove="Assets\Cards\hearts_five.png" />
+    <None Remove="Assets\Cards\hearts_four.png" />
+    <None Remove="Assets\Cards\hearts_three.png" />
+    <None Remove="Assets\Cards\hearts_two.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Assets\Cards\hearts_ace.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Cards\hearts_king.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Cards\hearts_queen.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Cards\hearts_jack.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Cards\hearts_ten.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Cards\hearts_nine.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Cards\hearts_eight.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Cards\hearts_seven.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Cards\hearts_six.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Cards\hearts_five.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Cards\hearts_four.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Cards\hearts_three.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\Cards\hearts_two.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>
